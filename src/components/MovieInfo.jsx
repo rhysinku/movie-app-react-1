@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 
 
+
 const MovieInfo = ({movieId}) => {
     
-    const [MovieData, setMovieData] = useState([]);
-    const [MovieIDtemp , setMovieIDtemp] = useEffect()
+     const [MovieData, setMovieData] = useState([]);
+    //const [MovieIDtemp , setMovieIDtemp] = useEffect()
 
     const movieData = async() => {
         const apiKey="195a1210";
@@ -14,7 +15,8 @@ const MovieInfo = ({movieId}) => {
             const respond = await fetch(apiUrl);
             const respondJson = await respond.json()
 
-          console.log(respondJson)
+            console.log(respondJson)
+            setMovieData(respondJson)
 
         }
         catch(error){
@@ -32,9 +34,14 @@ const MovieInfo = ({movieId}) => {
 
     return (
         <>
+        <div className="info_con wrapper">
         <div className="info_box">
-            <h2>{movieId}</h2>  
+            <figure><img src={MovieData.Poster} alt={MovieData.Title}/></figure>
+            <h2>{MovieData.Title}</h2>
+            <p>{MovieData.Plot}</p>
         </div>
+        </div>
+            
 
         </>
     );

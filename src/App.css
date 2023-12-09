@@ -32,3 +32,8 @@ h1,h2,h3,h4,h5{font-family: var(--priFont); line-height: 100%; font-weight: bold
 
 .inputBox{width: 100%; margin-inline: auto; margin-bottom: 20px;}
 .inputBox input{width: 100%; color: var(--fourthColor); padding-inline: 10px; padding-block: 15px;}
+
+
+.info_con{}
+.info_box{width: 100%; padding-block: 30px; background: var(--triColor); padding-inline: 10px; color: #fff;}
+.info_box h2{ margin-bottom: 10px;}
