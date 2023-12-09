@@ -26,9 +26,9 @@ h1,h2,h3,h4,h5{font-family: var(--priFont); line-height: 100%; font-weight: bold
 .box_card .movie_card{max-width: 400px; width: 100%; text-align: center; display: flex; flex-direction: column; row-gap: 15px; background: var(--triColor); padding: 35px 10px; border-radius: 25px;} 
 .box_card .movie_card figure{margin-inline: auto;  width: 100%; overflow: hidden; border-radius: 15px; max-width: 300px;} 
 .box_card .movie_card figure img{}
-.box_card .movie_card .movie_title{flex: 1; padding-block: 10px; display: flex; align-items: center; justify-content: center;}
+.box_card .movie_card .movie_title{flex: 1; padding-block: 10px; display: flex; align-items: center; justify-content: center; flex-direction: column; padding-inline: 15px;}
 .box_card .movie_card h2{font-size: 25px; margin-bottom: 0; color: var(--priColor);}
-
+.box_card .movie_card button{margin-top: 30px;}
 
 .inputBox{width: 100%; margin-inline: auto; margin-bottom: 20px;}
 .inputBox input{width: 100%; color: var(--fourthColor); padding-inline: 10px; padding-block: 15px;}
