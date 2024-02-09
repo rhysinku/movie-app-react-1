@@ -31,13 +31,14 @@ const MovieInfo = ({movieId}) => {
 
 
 
-
     return (
         <>
-        <div className="info_con wrapper">
+        <div className="info_con wrapper"> 
         <div className="info_box">
             <figure><img src={MovieData.Poster} alt={MovieData.Title}/></figure>
             <h2>{MovieData.Title}</h2>
+            <span className="movie__rls">{MovieData.Released}</span>
+           
             <p>{MovieData.Plot}</p>
         </div>
         </div>
